@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+header {
+  width: 100%;
+}
+
+#popup-header {
+  height: 90px;
+  width: 100%;
+  background-color: #EDAB9E;
+}
+.popup-content {
+  height: 100%;
+}
+.popup-content, .logocontainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logocontainer img {
+  width: 30px;
+  margin-right: 15px;
+}
