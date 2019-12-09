@@ -14,6 +14,14 @@ body {
 .hidden {
   display: none;
 }
+.cta {
+  text-decoration: none;
+  color: white;
+  background-color: #ee625b;
+  padding: 15px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
 
 body header .expanded {
   height: 0px;
@@ -118,11 +126,25 @@ body header .expanded {
 }
 
 main{
-  background: no-repeat top url('../images/background.png');
+  background: no-repeat top url('../images/background3.jpg');
   background-size: cover;
 }
 
 
 main .discover {
-  height: 900px;
+  height: calc(100vh - 90px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+}
+
+main .discover div h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+main .discover div {
+
 }
