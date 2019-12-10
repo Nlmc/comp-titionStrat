@@ -148,8 +148,27 @@ main .discover div h1 {
 }
 
 main .video-container {
-  display: none;
+  height: 100vh;
 }
+
+main .video-container video {
+  width: 100%
+}
+
+/* plugin video  */
+
+#set-height {
+  display: block;
+}
+#v0 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+
 
 main .know-more {
   z-index: 99;
