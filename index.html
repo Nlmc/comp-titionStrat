@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <div class="popup-header">
+      <div class="popup-header hidden">
         <div class="popup-content">
           <div class="logocontainer">
             <figure>
@@ -33,7 +33,7 @@
 
           </div>
         </div>
-        <a href="#" id="cross"><img src="sources/images/cross.png" alt=""></a>
+        <a href="#" id="cross" class="faded"><img src="sources/images/cross.png" alt=""></a>
       </div>
     </header>
     <main>
@@ -47,7 +47,7 @@
           <li><a href="#"><img src="sources/images/yt-picto.png" alt=""></a></li>
           <li><a href="#"><img src="sources/images/insta-picto.png" alt=""></a></li>
           <li><a href="#"><img src="sources/images/lk-picto.png" alt=""></a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="contact">Contact</a></li>
         </ul>
       </nav>
       <section class="container discover">
@@ -55,14 +55,20 @@
           <h1>Découvrez notre <br>dernière collaboration</h1>
           <a href="#" class="cta">Commencer l'expérience</a>
         </div>
-
       </section>
-      <section class="video-container container">
-        <div id="set-height"></div>
+      <section class="rightvideo">
+
         <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload">
+          <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="sources/video/pubPB.mp4"></source>
+        </video>
+      </section>
+      <section class="leftvideo">
+
+        <video id="v1" tabindex="0" autobuffer="autobuffer" preload="preload">
           <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="sources/video/polanski.mp4"></source>
         </video>
       </section>
+
       <section class="container know-more">
         <h2>Vous ne voulez pas en arriver là !</h2>
         <p>C'est pourquoi Kalio a été crééé. <br>
@@ -85,6 +91,7 @@
         <a href="#">Kit de presse</a>
         <a href="#">Nous contacter</a>
       </div>
+
     </footer>
   </body>
   <script src="sources/scripts/script.js" charset="utf-8"></script>

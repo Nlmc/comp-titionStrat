@@ -3,16 +3,16 @@ var form = document.querySelector('.popup-content .subscribe');
 var logo = document.querySelector('.popup-content .logocontainer figure');
 var popup = document.querySelector('.popup-header');
 var infos = document.querySelector('.infos');
-
+var contact = document.querySelector('#contact');
+var header = document.querySelector('.popup-header');
 console.log(button, popup);
 
-cross.addEventListener('click', function(){
-  popup.classList.toggle('expanded');
+contact.addEventListener('click', function(){
+  header.classList.toggle('hidden');
+  cross.classList.toggle('faded');
+});
 
-  setTimeout(function(){
-    logo.classList.toggle('hidden');
-    form.classList.toggle('hidden');
-    cross.classList.toggle('hidden');
-    infos.classList.toggle('hidden');
-  }, 350);
-})
+button.addEventListener('click', function(){
+  header.classList.toggle('hidden');
+  cross.classList.toggle('faded');
+});
