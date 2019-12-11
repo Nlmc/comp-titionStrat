@@ -5,6 +5,9 @@ header {
 body {
   font-family: 'Barlow', sans-serif;
 }
+.clearfix {
+  overflow: auto;
+}
 
 .container {
   margin: 0 auto;
@@ -39,13 +42,11 @@ body header .expanded {
   transition-duration: 1s;
 }
 
-
 .popup-content {
   height: 100%;
   color: white;
   width: 85%;
   margin: 0 auto;
-
 }
 .popup-content div{
   max-width: 33%;
@@ -138,7 +139,7 @@ body header .expanded {
 }
 
 main{
-  background: no-repeat top url('../images/background3.jpg');
+  background: no-repeat top url('../images/mainbg.jpg');
   background-size: contain;
 }
 
@@ -152,11 +153,17 @@ main .discover {
 }
 
 main .discover div h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bolder;
   margin-bottom: 50px;
 }
 
+.video-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 0 10%;
+}
 
 main .leftvideo video,  main .rightvideo video{
   width: 100%
@@ -168,23 +175,48 @@ main .leftvideo video,  main .rightvideo video{
   display: block;
 }
 
-.rightvideo {
-  margin: 0 0 ;
-  width: 80%;
-  float: right;
+.right-text {
+  width: 50%;
+  text-align: right;
+}
+.left-text {
+  width: 50%;
+  text-align: left;
+}
+.left-text h2, .right-text h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+}
+.left-text p {
+  margin: 25px 0;
+  width: 90%;
+}
+.right-text p {
+  margin: 25px 0;
 }
 
-.rightvideo .overlay {
-  position: relative;
-  margin: auto;
+.left-text q {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.right-text span {
+  font-weight: bold;
+}
+
+
+.rightvideo {
+  margin: 0 0;
+  width: 50%;
+  max-height: 100vh;
 }
 .leftvideo {
-  margin: 0 0 ;
-  width: 80%;
-  position: relative;
-  top: 0;
-  left: 0;
+  margin: 0 0 0 20px  ;
+  width: 50%;
+  max-height: 100vh;
 }
+
 
 main .know-more {
   display: flex;
@@ -193,7 +225,7 @@ main .know-more {
   height: calc(100vh - 90px);
   align-items: center;
   text-align: center;
-}
+  }
 main .bg-container {
   width: 100%;
   background: no-repeat top url('../images/backgroundbottom.png');

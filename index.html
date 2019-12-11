@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="sources/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Jeu d'enfants est une campagne de publicité portée par Kalio, une association qui promeut l'art par le biais des collaborations">
     <title>Jeu d'enfant</title>
   </head>
   <body>
@@ -25,7 +26,6 @@
           </div>
           <div class="subscribe">
             <span>En savoir plus grâce à notre newsletter</span>
-
               <form class="" action="" method="post">
                 <input type="text" name="" value="" placeholder="votre adresse email...">
                 <input type="submit" name="" value="S'abonner">
@@ -56,33 +56,43 @@
           <a href="#" class="cta">Commencer l'expérience</a>
         </div>
       </section>
-
-      <section class="rightvideo">
-        <div class="overlay">
+      <section class="container video-container">
+        <div class="left-text">
           <h2>Petit bateau</h2>
           <p>Célèbre marque textile connue surtout pour les enfants. C'est l'image même de la bienveillance et l'innocence et de l'amusement. Leur fameux slogan disait:
           </p>
-            <q cite="">"A quoi ça sert d'avoir des vêtements si on peut rien faire dedans?"</q>
+          <q cite="">"A quoi ça sert d'avoir des vêtements si on peut rien faire dedans?"</q>
         </div>
-        <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload">
-          <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="sources/video/pubPB.mp4"></source>
-        </video>
+        <div class="rightvideo">
+          <video id="v0" tabindex="0" autobuffer="autobuffer" preload="preload">
+            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="sources/video/pubPB.mp4"></source>
+          </video>
+        </div>
       </section>
-
-      <section class="leftvideo">
-
-        <video id="v1" tabindex="0" autobuffer="autobuffer" preload="preload">
-          <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="sources/video/polanski.mp4"></source>
-        </video>
+      <section class="container video-container">
+        <div class=" rightvideo">
+          <video id="v1" tabindex="0" autobuffer="autobuffer" preload="preload">
+            <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="sources/video/polanski.mp4"></source>
+          </video>
+        </div>
+        <div class="right-text">
+          <h2>Roman Polanski</h2>
+          <p>C'est un réalisateur, producteur et scénariste franco-polonais,<br>
+            également comédien, ainsi que metteur en scène à succès de théatre et d'opéra.
+          </p>
+          <span>Soupconné lui aussi d'avoir un rapport à l'enfance un peu spécial ...</span>
+        </div>
       </section>
-      <div class="bg-container">
-        <section class="container know-more">
-          <h2>Vous ne voulez pas en arriver là !</h2>
-          <p>C'est pourquoi Kalio a été crééé. <br>
-            Découvrez notre association pour vous aider à mieux penser
-            vos collaborations.
-           </p>
-           <a href="#" class="cta">En savoir plus</a>
+        <section class="bg-container ">
+          <div class="know-more container">
+            <h2>Vous ne voulez pas en arriver là !</h2>
+            <p>C'est pourquoi Kalio a été crééé. <br>
+              Découvrez notre association pour vous aider à mieux penser
+              vos collaborations.
+             </p>
+             <a href="#" class="cta">En savoir plus</a>
+          </div>
+
         </section>
       </div>
     </main>
