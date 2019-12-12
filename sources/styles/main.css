@@ -112,6 +112,7 @@ body header .expanded {
   justify-content: space-between;
   align-items: center;
   height: 90px;
+  z-index: 99;
 }
 
  #socials-container h1 img {
@@ -139,10 +140,17 @@ body header .expanded {
 }
 
 main{
-  background: no-repeat top url('../images/mainbg.jpg');
+  /* background: no-repeat top url('../images/mainbg.jpg'); */
   background-size: contain;
+  z-index: 0;
 }
 
+.main-bg {
+  background: no-repeat top url('../images/mainbg.jpg');
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+}
 
 main .discover {
   height: calc(100vh - 90px);
